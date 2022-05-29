@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background: url(img/fondo.jpg) ;
+    background-size: auto;
+    width: 100%;
+
+}
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: aquamarine;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+   
+}
+.bienvenidos{
+    text-align: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+/*menu -------------------------------------------------------------------------------------------------------*/
+.menu{
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+
+    display:flex;
+    flex-direction: row;
+    /*display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas: 
+    "remeras remeras remeras remeras   "
+    "nosotros nosotros nosotros nosotros"
+    "local local opinión opinión  "
+    "none none none none  "
+    ;
+    gap: 40px;
+    */
+}
+
+.menu > ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    position: relative;
+} 
+
+.menu > ul il{
+    display: table-cell;
+    
+}
+.menu >ul il a {
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all ,3s ease; 
+}
+/*esconder los iconos del menu*/
+.menu > ul > il > a span{
+    background: #5da5a2;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left:0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all ,3s ease; 
+}
+/*iconos del menu*/
+.menu > ul > il > a span .icon{
+    display: block;
+    line-height: 60px;
+
+}
+
+.menu > ul > il > a:hover >span{
+top: 0;
+
+
+}
+
+/*colores del menu---------------------------------------- */
+.menu ul il a .reme-co{
+    background: #17948e;
+}
+
+.menu ul il a .noso-co{
+    background: #127c59;
+}
+l.menu ul il a .local-co{
+    background: #995d0f;
+}
+
+.menu ul il a .opi-co{
+    background: #143bbe;
+}
+/*remeras -------------------------------------------------------*/
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor figure {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px
+    rgba(0, 0,0, 0.50);
+    cursor: pointer;
+    
+}
+.contenedor figure reme1 {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103,123, 0,6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+
+}
+/*animacion del parrafo*/
+.contenedor figure:hover >.capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+.contenedor figure:hover > reme1 {
+    transform: scale(1.3);
+
+}
+
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.contenedor figure .capa p{
+    color:#fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+
+}
+
+
+/*-------------------------------------------------------------/
+/*.boton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #141414;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius:5px;
+}
+
+.boton:hover{
+    background: rgb(45, 17, 170);
+}
+*/
+/*fin de menus con botones ----------------------------------------------------------------------------------------------------*/
+
+p{
+    text-align: center;
+    text-decoration:mediumblue;
+    font-family:"verdana";
+    background-color: darkgreen;
+    font-size: 30px;
+    height: auto;
+    width: auto;
+    
+    
+    
+    
+}
+
+h1,h2{
+    background-color: honeydew;
+}
+/**.imagenes{
+    font-size: 40px;
+    padding-right: 10px;
+    height: 50px;
+    width: 200px;
+    margin-right: 10px;
+
+}*/
+
+/*esta parte seria publicidad de los productos aliatoria como recomendaciones*/
+
+/*remeras ------------------------------------------------------------------------------------------------------*/
+
+.tienda{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows:minmax(200px), auto;
+    gap:20px;
+    padding: 20px;
+}
+
+
+#reme1{
+    width: 350px;
+    height: 250px;
+    /*font-size: 40px;
+    padding-right: 600px;
+    padding-left: 550px;
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+*/
+}
+
+#reme2{
+    font-size: 40px;
+    padding-right: 10px;
+    padding-left:50px ;
+    height: 250px;
+    width: 350px;
+    margin-right: 10px;
+}
+
+#reme3{
+    font-size: 40px;
+    padding-right: 60px;
+    padding-left: 10px;
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+
+}
+
+.letras{
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+.social{
+    padding-top: 200px;
+    padding-left: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.tienda{
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 100px;
+    height: 200px;
+    
+}
+
+/*mapa----------------------------------------------------------------------------------------------------------------*/
+#maps{
+    text-align: center;
+    padding-left: 400px;
+}
+
+/*formulario-------------------------------------------------------------------------------------------------------*/
+.formu{
+    
+    text-align: center;
+}
+.formu,h2{
+     font-size: 30px;
+     
+    
+
+}
+
+#lugar 
+{
+    text-align: center;
+
+}
+
+/*------------------------------*/
+ #text{
+     background-color: rgb(8, 7, 7);
+     color: rgb(11, 164, 184);
+     padding: 20px;
+     margin: auto;
+ }
+#titulo{
+    font-size: 50px;
+}
+
+#imagencasa{
+    width: 700px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    padding:auto;
+   text-align: center;
+    border:2px solid #ccc ;
+}
+
+@media (max-width:1200px){
+   
+
+    #reme1{
+        height: 210;
+        width: 200;
+        margin: 0;
+        
+        right: 100px;
+        left: 150px;
+    }
+    #reme2{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #reme3{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    
+    
+
+}
+
+@media (max-width:992px){
+
+    #reme1{
+        grid-column: 1/ span 3;
+    }
+
+    P{
+        height: auto;
+        width: auto;
+        
+    }
+    #reme1{
+        font-size: 40px;
+        padding-right: 100px;
+        padding-left: 50px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+    
+    }
+    
+    #reme2{
+        font-size: 40px;
+        padding-right: 10px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+    }
+    
+    #reme3{
+        font-size: 40px;
+        padding-right: 10px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+    }
+    
+}
+
+@media (max-width:700) {
+
+    .tienda{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-auto-rows:minmax(200px), auto;
+        gap:20px;
+        padding: 20px;
+    }
+    #reme1{
+        grid-column: 1/ span 3;
+    }
+    
+
+}
+
+@media (max-width:576px ){
+
+
+    #reme2{
+        font-size: 30px;
+        padding-right: 30px;
+        padding-left:  20px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+    }
+    
+}
