@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body{
@@ -15,7 +16,7 @@ body{
 header{
     display: flex;
     min-height: 70px;
-    background-color: aquamarine;
+    background-color: rgb(122, 255, 228);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -205,7 +206,6 @@ l.menu ul il a .local-co{
 
 }
 
-
 /*-------------------------------------------------------------/
 /*.boton{
     display: inline-flex;
@@ -261,15 +261,62 @@ h1,h2{
 /*remeras ------------------------------------------------------------------------------------------------------*/
 
 .tienda{
-
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows:minmax(200px), auto;
-    gap:20px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap:20px;
 }
 
+.tienda .box-img figure{
+    width: 100%;
+    height: 100%;
+}
 
+.tienda .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tienda .box-img:m1{
+    grid-column-start: span 2;
+}
+
+.tienda .box-img:m3{
+    grid-row-start: span 2;
+}
+
+@media screen and (max-width: 800px){
+    .tienda {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:10px;
+        grid-template-rows: 200px;
+    }
+
+    .tienda .box-img:m1{
+        grid-column-start: span 1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tienda {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .tienda .box-img img{
+        height: 200px;
+    }
+}
+
+/*fin REMERAS-----------------------------------------------------------------------------------------------------------------*/
 #reme1{
     width: 350px;
     height: 250px;
@@ -278,9 +325,10 @@ h1,h2{
     padding-left: 550px;
     height: 200px;
     width: 200px;
-    margin-right: 10px;
-*/
-}
+    margin-right: 10px;*/
+
+}    
+
 
 #reme2{
     font-size: 40px;
@@ -307,12 +355,16 @@ h1,h2{
     justify-content: center;
 
 }
-/*----------------------------------------------------------------------------------------------------------------------*/
+/*footer con redes----------------------------------------------------------------------------------------------------------------------*/
 .social{
-    padding-top: 200px;
-    padding-left: 100px;
-    height: 200px;
-    text-align: center;
+        padding-top: 100px;
+        padding-left: 5px;
+        padding-right: 30px;
+        height: auto;
+        width: 1400px;
+        text-align: center;
+        font-size: 50px;
+    
 }
 
 .tienda{
@@ -326,7 +378,10 @@ h1,h2{
 /*mapa----------------------------------------------------------------------------------------------------------------*/
 #maps{
     text-align: center;
-    padding-left: 400px;
+    padding-left: 100px;
+    width: 70%;
+    margin: 0 auto;
+    height: 500px;
 }
 
 /*formulario-------------------------------------------------------------------------------------------------------*/
@@ -365,9 +420,14 @@ h1,h2{
     border-radius: 20px;
     padding:auto;
    text-align: center;
-    border:2px solid #ccc ;
+    border:2px solid #ccc;
+    left: 50px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
+/*medidas de pantalla -------------------------------------------------------------------------------------------------------------------*/
 @media (max-width:1200px){
    
 
@@ -395,72 +455,785 @@ h1,h2{
 
 }
 
-@media (max-width:992px){
+@media (max-width:1069px){
 
-    #reme1{
-        grid-column: 1/ span 3;
-    }
+        .bienvenidos{
+            position: relative;
+            left:50px;
+            right: 50px;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    P{
-        height: auto;
-        width: auto;
-        
-    }
-    #reme1{
-        font-size: 40px;
-        padding-right: 100px;
-        padding-left: 50px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
+        .logo{
+            position: relative;
+            left: 40px;
+        }
+
+        .social{
+            padding-top: 100px;
+            padding-left: 50px;
+            padding-right: 70px;
+            height: 170px;
+            width: 900px;
+            text-align: center;
+            font-size: 50px;
+        }
+       
+        .menu > ul {
+            display: table;
+            overflow: hidden;
+            width: 70%;
+           
+            position: relative;
+            left: 1px;
+            right: 20px;
+        } 
     
+
+}
+@media (max-width:793px){
+    .bienvenidos{
+        position:relative;
+        left: 50px;
     }
+
+    .logo{
+        position: relative;
+        left: 50px;
+    }
+
+    .pa1, .pa2{
+        font-size: 20px;
+        left: 1px;
+
+    }
+
+    .contenedor figure {
+        position: relative;
+        width: 200px;
+        height: 220px;
+        
+        cursor: pointer;
+        top: 20px;
+        left: 1px;
+    }
+
+    #reme1{
+        height: 250px ;
+        width: 200px ;
+        left: 0.2px;
+        padding-left: 3px;
+    }
+    #reme2{
+        bottom: 10px;
+        height: auto;
+        width: 190px;
+    }
+
+
+
+    .social{
+        padding-top: 100px;
+        padding-left: 40px;
+        padding-right: 90px;
+        height: 150px;
+        width: 650px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width:785px){
+    .bienvenidos{
+        position:relative;
+        left: 10px;
+        font-size: 30px;
+    }
+
+    .logo{
+        position: relative;
+        left: 110px;
+    }
+
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 75%;
+       
+        position: relative;
+        left: 60px;
+        right: 20px;
+    } 
+
+}
+
+@media (max-width:731px){
+    .bienvenidos{
+        position:relative;
+        left: 10px;
+        font-size: 25px;
+    }
+
+    .logo{
+        position: relative;
+        left: 110px;
+    }
+
+    .pa1, .pa2{
+        font-size: 20px;
+        left: 1px;
+
+    }
+
+    .contenedor figure {
+        position: relative;
+        width: 200px;
+        height: 220px;
+        
+        cursor: pointer;
+        top: 20px;
+        left: 1px;
+    }
+
+    #reme1{
+        height: 250px ;
+        width: 200px ;
+        left: 0.2px;
+        padding-left: 3px;
+    }
+    #reme2{
+        bottom: 10px;
+        height: auto;
+        width: 190px;
+    }
+
+
+
+    .social{
+        padding-top: 100px;
+        padding-left: 40px;
+        padding-right: 90px;
+        height: 150px;
+        width: 650px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 75%;
+       
+        position: relative;
+        left: 60px;
+        right: 20px;
+    } 
+
+}
+@media (max-width:703px) {
+
+
+    .bienvenidos{
+        position:relative;
+        left: 50px;
+    }
+    
+    .pa1, .pa2{
+        font-size: 20px;
+        left: 1px;
+
+    }
+
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 90%;
+       
+        position: relative;
+        left: 1px;
+        right: 20px;
+    } 
+
+    .contenedor figure {
+        position: relative;
+        width: 200px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px
+        rgba(0, 0,0, 0.50);
+        cursor: pointer;
+        top: 20px;
+        left: 1px;
+    }
+    #reme1{
+        height: 250px ;
+        width: 200px ;
+        left: 0.2px;
+        padding-left: 3px;
+    }
+
+    #reme2{
+        top: 200px;
+        height: 220px;
+        width: 250px;
+        bottom: 150px
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 70px;
+        height: 150px;
+        width: 650px;
+        text-align: center;
+        font-size: 50px;
+    }
+}  
+@media (max-width:699px)
+{
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 65%;
+       
+        position: relative;
+        left: 1px;
+        right: 20px;
+    } 
+
+    .bienvenidos{
+        position: relative;
+        left:10px;
+        right: 30px;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .logo{
+        position: relative;
+        left: 30px;
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 0.1px;
+        padding-right: 170px;
+        height: 150px;
+        width: 500px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .pa1, .pa2{
+        font-size: 20px;
+        left: 0.1px;
+        padding-left: 5px;
+        padding-right: 180px;
+    }
+
+}
+@media (max-width:649px)
+{
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 70%;
+       
+        position: relative;
+        left: 60px;
+        right: 20px;
+    } 
+
+    .bienvenidos{
+        position: relative;
+        left:10px;
+        right: 30px;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .logo{
+        position: relative;
+        left: 70px;
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 0.1px;
+        padding-right: 170px;
+        height: 150px;
+        width: 600px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .pa1, .pa2{
+        font-size: 20px;
+        left: 0.1px;
+        padding-left: 30px;
+        padding-right: 70px;
+    }
+
+}
+@media (max-width:539px) {
+    .bienvenidos{
+        font-size: 30px;
+    }
+
+    .pa1, .pa2{
+        font-size: 25px;
+        width: 500px;
+        height:100%;
+
+    }
+
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 90%;
+       
+        position: relative;
+        left: 0,1px;
+        right: 20px;
+    } 
     
     #reme2{
-        font-size: 40px;
-        padding-right: 10px;
+        font-size: 30px;
+        padding-right: 30px;
+        padding-left:  10px;
         height: 200px;
         width: 200px;
         margin-right: 10px;
+        top: 450px;
+        position: absolute;
+        
     }
-    
-    #reme3{
-        font-size: 40px;
-        padding-right: 10px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
-    }
-    
-}
 
-@media (max-width:700) {
-
-    .tienda{
-
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-auto-rows:minmax(200px), auto;
-        gap:20px;
-        padding: 20px;
-    }
     #reme1{
-        grid-column: 1/ span 3;
+        height: 250px ;
+        width: 200px ;
+        left: 0.2px;
+        padding-left: 3px;
+        
     }
-    
+
+    .contenedor figure {
+        position: relative;
+        width: 195px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px
+        rgba(0, 0,0, 0.50);
+        cursor: pointer;
+        top: 200px;
+        left: 0.1px;
+        
+        
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 80px;
+        padding-right: 70px;
+        height: 80px;
+        width: 350px;
+        text-align: center;
+        font-size: 50px;
+    }
+
 
 }
 
-@media (max-width:576px ){
+
+@media (max-width: 433px){
+    .bienvenidos{
+        font-size: 20px;
+        width: auto;
+    }
+
+    .logo{
+        position: relative;
+        left: 10px;
+    }
+
+    header{
+        width: 600px;
+    }
+
+}
+@media (max-width: 437px){
+    .bienvenidos{
+        font-size: 20px;
+        width: auto;
+    }
+
+    .logo{
+        position: relative;
+        left: 10px;
+    }
+
+    header{
+        width: 600px;
+    }
+
+}
+@media (max-width: 401px){
+    .bienvenidos{
+        font-size: 10px;
+        width: auto;
+        left: 50px;
+    }
+
+    .logo{
+        position: relative;
+        left: 150px;
+       
+    }
+   
+
+    header{
+        width: 300px;
+    }
+
+    .menu > ul {
+        display: table;
+        overflow: hidden;
+        width: 50%;
+       
+        position: relative;
+        left: 110px;
+        right: 10px;
+    } 
+    
+    #reme2{
+        font-size: 30px;
+        padding-right: 30px;
+        padding-left:  10px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+        top: 450px;
+        position: absolute;
+        
+    }
+
+    #reme1{
+        height: 250px ;
+        width: 200px ;
+        left: 0.2px;
+        padding-left: 3px;
+        
+    }
+
+    .contenedor figure {
+        position: relative;
+        width: 195px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px
+        rgba(0, 0,0, 0.50);
+        cursor: pointer;
+        top: 200px;
+        left: 0.1px;
+        
+        
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 80px;
+        padding-right: 70px;
+        height: 80px;
+        width: 350px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+}
+@media (max-width: 437px){
+    .bienvenidos{
+        font-size: 18px;
+        width: auto;
+    }
+
+    .logo{
+        position: relative;
+        left: 40px;
+    }
+
+    header{
+        width: 600px;
+    }
+}
+
+@media (max-width:385px ){
+
+    
+    .bienvenidos{
+        position: relative;
+        left:20px;
+        right: 50px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+    }
+
+     .pa1, .pa2{
+        font-size: 15px;
+
+    }
 
 
     #reme2{
         font-size: 30px;
         padding-right: 30px;
-        padding-left:  20px;
+        padding-left:  80px;
         height: 200px;
         width: 200px;
         margin-right: 10px;
+        top: 300px;
+        position: absolute;
+        
+        left:0;
+    }
+
+    #reme1 {
+        height: 250px;
+        width: 190px;
+       padding-left: 3px;
+    }
+
+    .contenedor figure {
+        position: relative;
+        width: 195px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px
+        rgba(0, 0,0, 0.50);
+        cursor: pointer;
+        
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 50px;
+        height: 80px;
+        width: 350px;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    
+}
+
+/*---------------------------------------------------------------*/
+@media(max-width: 329px) {
+    #reme2{
+        font-size: 30px;
+        padding-right: 30px;
+        padding-left:  80px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+        top: 355px;
+        position: absolute;
+        
+        left:0;
+    }
+
+    #reme1 {
+        height: 250px;
+        width: 190px;
+       padding-left: 3px;
+    }
+
+    .contenedor figure {
+        position: relative;
+        width: 190px;
+        height: 250px;
+        top: 100px;
+        left: 20px;
+        
+    }
+
+    header{
+        display: flex;
+        min-height: 50px;
+        width:350px;
+    }
+    
+    .bienvenidos{
+        left: 10px;
+    }
+
+    .pa1, .pa2{
+        font-size: 15px;
+        width: 370px;
+        height: 100%;
+
+    }
+    /*nosotros--------------*/
+    #text{
+        position: relative;
+        width: 700px;
+        height: 200px;
+        font-size: 35px;
+    }
+    #par{
+        position: relative;
+        width: auto;
+        height: auto;
+        font-size: 35px;
+
+    }
+
+    h1, h2 {
+        position: relative;
+        width: 720px;
+    }
+    
+
+    
+}
+@media(max-width: 327px){
+    /*nosotros--------------*/
+    #text{
+        position: relative;
+        width: 680px;
+        height: 200px;
+        font-size: 35px;
+    }
+    #par{
+        position: relative;
+        width: 690px;
+        height: 1100px;
+        font-size: 35px;
+
+    }
+
+    h1, h2 {
+        position: relative;
+        width: 720px;
+    }
+    
+}
+@media(max-width: 289px){
+    /*nosotros--------------*/
+    #text{
+        position: relative;
+        width: 700px;
+        height: 200px;
+        font-size: 30px;
+    }
+    #par{
+        position: relative;
+        width: 700px;
+        height: 1200px;
+        font-size: 35px;
+
+    }
+
+    h1, h2 {
+        position: relative;
+        width: 720px;
+    }
+    
+}
+
+@media (max-width:279px ){
+
+    
+    .bienvenidos{
+        position: relative;
+        left:20px;
+        right: 50px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+    }
+
+     .pa1, .pa2{
+        font-size: 15px;
+        width: 390px;
+        height: 100%;
+
+    }
+
+
+    #reme2{
+        font-size: 30px;
+        padding-right: 30px;
+        padding-left:  80px;
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+        top: 300px;
+        position: absolute;
+        
+        left:0;
+    }
+
+    #reme1 {
+        height: 250px;
+        width: 190px;
+       padding-left: 3px;
+    }
+
+    .contenedor figure {
+        position: relative;
+        width: 190px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px
+        rgba(0, 0,0, 0.50);
+        cursor: pointer;
+         top: 50px;
+         left: 40px;
+        
+    }
+
+    .social{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 50px;
+        height: 150px;
+        width: 350px;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    header{
+        display: flex;
+        min-height: 50px;
+        width:420px;
+    }
+
+    /*nosotros--------------*/
+    #text{
+        position: relative;
+        width: 700px;
+        height: 200px;
+        font-size: 35px;
+    }
+    #par{
+        position: relative;
+        width: 750px;
+        height: 1100px;
+        font-size: 35px;
+
+    }
+
+    h1, h2 {
+        position: relative;
+        width: 720px;
     }
     
 }
