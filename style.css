@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -258,6 +259,13 @@ h1,h2{
 
 /*esta parte seria publicidad de los productos aliatoria como recomendaciones*/
 
+/*boostrap remeras carusel */
+.cointener{
+    padding-left: 340px;
+}
+
+
+
 /*remeras ------------------------------------------------------------------------------------------------------*/
 
 .tienda{
@@ -283,37 +291,36 @@ h1,h2{
     object-fit: cover;
 }
 
-.tienda .box-img:m1{
+.tienda .box-img:nth-child(1){
     grid-column-start: span 2;
 }
 
-.tienda .box-img:m3{
+.tienda .box-img:nth-child(4){
     grid-row-start: span 2;
 }
 
-@media screen and (max-width: 800px){
-    .tienda {
-        width: 95%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap:10px;
-        grid-template-rows: 200px;
-    }
-
-    .tienda .box-img:m1{
-        grid-column-start: span 1;
-    }
+@media screen and (max-width:800px){
+        .tienda{
+            width: 95%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-template-rows: 200px;
+        }
+        .tienda .box-img:nth-child(1){
+            grid-column-start: span 1;
+        }
 }
 
-@media screen and (max-width: 500px){
-    .tienda {
+@media screen and (max-width:500px){
+    .tienda{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
         
     }
-
     .tienda .box-img img{
         height: 200px;
     }
+
 }
 
 /*fin REMERAS-----------------------------------------------------------------------------------------------------------------*/
@@ -356,6 +363,12 @@ h1,h2{
 
 }
 /*footer con redes----------------------------------------------------------------------------------------------------------------------*/
+
+.footer{
+position: fixed;
+  bottom: 0;   
+}
+
 .social{
         padding-top: 100px;
         padding-left: 5px;
@@ -390,10 +403,23 @@ h1,h2{
     text-align: center;
 }
 .formu,h2{
-     font-size: 30px;
-     
-    
+     font-size: 20px;
 
+}
+
+label{
+    padding-right: 290px;
+}
+
+.formu, label{
+    padding-right: 10px;
+
+}
+
+.texto{
+
+    padding-top: 10px;
+    border: #000;
 }
 
 #lugar 
@@ -402,6 +428,9 @@ h1,h2{
 
 }
 
+.boton{
+    background: rgb(26, 77, 100);
+}
 /*------------------------------*/
  #text{
      background-color: rgb(8, 7, 7);
@@ -630,6 +659,9 @@ h1,h2{
         left: 60px;
         right: 20px;
     } 
+
+    /*boostrap */
+
 
 }
 @media (max-width:703px) {
@@ -1237,3 +1269,28 @@ h1,h2{
     }
     
 }
+
+/*@media screen and (max-width: 800px){
+    .tienda {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:10px;
+        grid-template-rows: 200px;
+    }
+
+    .tienda .box-img:m1{
+        grid-column-start: span 1;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tienda {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .tienda .box-img img{
+        height: 200px;
+    }
+}*/
