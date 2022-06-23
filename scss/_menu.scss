@@ -1,0 +1,109 @@
+/*menu --------------------*/
+
+.menu{
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+
+    display:flex;
+    flex-direction: row;
+    /*display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas: 
+    "remeras remeras remeras remeras   "
+    "nosotros nosotros nosotros nosotros"
+    "local local opinión opinión  "
+    "none none none none  "
+    ;
+    gap: 40px;
+    */
+}
+
+.menu > ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    background: #000;
+    position: relative;
+} 
+
+.menu > ul il{
+    display: table-cell;
+    
+}
+.menu >ul il a {
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all ,3s ease; 
+}
+/*esconder los iconos del menu*/
+.menu > ul > il > a span{
+    background: #5da5a2;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left:0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all ,3s ease; 
+}
+/*iconos del menu*/
+.menu > ul > il > a span .icon{
+    display: block;
+    line-height: 60px;
+
+}
+
+.menu > ul > il > a:hover >span{
+top: 0;
+
+
+}
+
+/*colores del menu---------------------------------------- */
+.menu ul il a .reme-co{
+    background: #17948e;
+}
+
+.menu ul il a .noso-co{
+    background: #127c59;
+}
+l.menu ul il a .local-co{
+    background: #995d0f;
+}
+
+.menu ul il a .opi-co{
+    background: #143bbe;
+}
+
+
+.footer{
+    position: fixed;
+      bottom: 0;   
+}
+    
+    .social{
+            padding-top: 100px;
+            padding-left: 5px;
+            padding-right: 30px;
+            height: auto;
+            width: 1400px;
+            text-align: center;
+            font-size: 50px;
+        
+    }
+  

@@ -1,0 +1,21 @@
+.main{
+    #titulo{
+    font-size: 50px;
+    }
+
+    #imagencasa{
+        width: 700px;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        padding:auto;
+       text-align: center;
+        border:2px solid #ccc;
+        left: 50px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+        }
+
+}

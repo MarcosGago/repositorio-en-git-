@@ -1,58 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
 
-body{
-    margin: 0;
-    background: url(img/fondo.jpg) ;
-    background-size: auto;
-    width: 100%;
+body {
+  margin: 0;
+  background: url(img/fondo.jpg);
+  background-size: auto;
+  width: 100%; }
 
-}
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #7affe4;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
 
+h1 {
+  text-align: center;
+  background-color: honeydew; }
 
-header{
-    display: flex;
-    min-height: 70px;
-    background-color: rgb(122, 255, 228);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+h2 {
+  background-color: honeydew; }
 
-}
+p {
+  text-align: center;
+  text-decoration: mediumblue;
+  font-family: "verdana";
+  background-color: darkgreen;
+  font-size: 30px;
+  height: auto;
+  width: auto; }
 
-h1{
-    text-align: center;
-    
-}
+h1 {
+  text-align: center; }
 
-.logo{
-    display:flex;
-    align-items: center;
-   
-}
-.bienvenidos{
-    text-align: center;
-}
+.logo {
+  display: flex;
+  align-items: center; }
 
-.logo img{
-    height: 50px;
-    margin-right: 10px;
+.bienvenidos {
+  text-align: center; }
 
-}
+.logo img {
+  height: 50px;
+  margin-right: 10px; }
 
-/*menu -------------------------------------------------------------------------------------------------------*/
-.menu{
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1000px;
+.cointener {
+  padding-left: 340px; }
 
-    display:flex;
-    flex-direction: row;
-    /*display: grid;
+/*menu --------------------*/
+.menu {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  /*display: grid;
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows: repeat(4 1fr);
     grid-template-areas: 
@@ -62,1235 +69,335 @@ h1{
     "none none none none  "
     ;
     gap: 40px;
-    */
-}
+    */ }
 
 .menu > ul {
-    display: table;
-    overflow: hidden;
-    width: 100%;
-    background: #000;
-    position: relative;
-} 
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  background: #000;
+  position: relative; }
 
-.menu > ul il{
-    display: table-cell;
-    
-}
-.menu >ul il a {
-    color: #fff;
-    display: block;
-    line-height: 20px;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all ,3s ease; 
-}
+.menu > ul il {
+  display: table-cell; }
+
+.menu > ul il a {
+  color: #fff;
+  display: block;
+  line-height: 20px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all ,3s ease; }
+
 /*esconder los iconos del menu*/
-.menu > ul > il > a span{
-    background: #5da5a2;
-    display: block;
-    height: 100%;
-    width: 100%;
-    left:0;
-    position: absolute;
-    top: -55px;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all ,3s ease; 
-}
+.menu > ul > il > a span {
+  background: #5da5a2;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: -55px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all ,3s ease; }
+
 /*iconos del menu*/
-.menu > ul > il > a span .icon{
-    display: block;
-    line-height: 60px;
+.menu > ul > il > a span .icon {
+  display: block;
+  line-height: 60px; }
 
-}
-
-.menu > ul > il > a:hover >span{
-top: 0;
-
-
-}
+.menu > ul > il > a:hover > span {
+  top: 0; }
 
 /*colores del menu---------------------------------------- */
-.menu ul il a .reme-co{
-    background: #17948e;
-}
+.menu ul il a .reme-co {
+  background: #17948e; }
 
-.menu ul il a .noso-co{
-    background: #127c59;
-}
-l.menu ul il a .local-co{
-    background: #995d0f;
-}
+.menu ul il a .noso-co {
+  background: #127c59; }
 
-.menu ul il a .opi-co{
-    background: #143bbe;
-}
-/*remeras -------------------------------------------------------*/
+l.menu ul il a .local-co {
+  background: #995d0f; }
 
-.contenedor{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+.menu ul il a .opi-co {
+  background: #143bbe; }
 
-.contenedor figure {
+.footer {
+  position: fixed;
+  bottom: 0; }
+
+.social {
+  padding-top: 100px;
+  padding-left: 5px;
+  padding-right: 30px;
+  height: auto;
+  width: 1400px;
+  text-align: center;
+  font-size: 50px; }
+
+.tienda {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px; }
+
+.tienda .box-img figure {
+  width: 100%;
+  height: 100%; }
+
+.tienda .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.tienda .box-img:nth-child(1) {
+  grid-column-start: span 2; }
+
+.tienda .box-img:nth-child(4) {
+  grid-row-start: span 2; }
+
+.main #titulo {
+  font-size: 50px; }
+
+.main #imagencasa {
+  width: 700px;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  padding: auto;
+  text-align: center;
+  border: 2px solid #ccc;
+  left: 50px; }
+
+.main ::-webkit-scrollbar {
+  display: none; }
+
+@media (max-width: 437px) {
+  .bienvenidos {
+    font-size: 18px;
+    width: auto; }
+  .logo {
     position: relative;
-    width: 350px;
+    left: 40px; }
+  header {
+    width: 600px; } }
+
+@media (max-width: 385px) {
+  .bienvenidos {
+    position: relative;
+    left: 20px;
+    right: 50px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .pa1, .pa2 {
+    font-size: 15px; }
+  #reme2 {
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 80px;
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    top: 300px;
+    position: absolute;
+    left: 0; }
+  #reme1 {
+    height: 250px;
+    width: 190px;
+    padding-left: 3px; }
+  .contenedor figure {
+    position: relative;
+    width: 195px;
     height: 250px;
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0px 15px 25px
-    rgba(0, 0,0, 0.50);
-    cursor: pointer;
-    
-}
-.contenedor figure reme1 {
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
-
-.contenedor figure .capa{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(11, 103,123, 0,6);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-.contenedor figure:hover > .capa{
-    opacity: 1;
-    visibility: visible;
-
-}
-/*animacion del parrafo*/
-.contenedor figure:hover >.capa h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
-
-}
-.contenedor figure:hover > reme1 {
-    transform: scale(1.3);
-
-}
-
-.contenedor figure .capa h3{
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-}
-
-.contenedor figure .capa p{
-    color:#fff;
-    font-size: 15px;
-    line-height: 1.5;
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
-
-}
-
-/*-------------------------------------------------------------/
-/*.boton{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+  .social {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 50px;
     height: 80px;
-    background: #141414;
-    color: #ccc;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: .3s ease all;
-    border-radius:5px;
-}
-
-.boton:hover{
-    background: rgb(45, 17, 170);
-}
-*/
-/*fin de menus con botones ----------------------------------------------------------------------------------------------------*/
-
-p{
-    text-align: center;
-    text-decoration:mediumblue;
-    font-family:"verdana";
-    background-color: darkgreen;
-    font-size: 30px;
-    height: auto;
-    width: auto;
-    
-    
-    
-    
-}
-
-h1,h2{
-    background-color: honeydew;
-}
-/**.imagenes{
-    font-size: 40px;
-    padding-right: 10px;
-    height: 50px;
-    width: 200px;
-    margin-right: 10px;
-
-}*/
-
-/*esta parte seria publicidad de los productos aliatoria como recomendaciones*/
-
-/*boostrap remeras carusel */
-.cointener{
-    padding-left: 340px;
-}
-
-
-
-/*remeras ------------------------------------------------------------------------------------------------------*/
-
-.tienda{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px;
-    grid-gap:20px;
-}
-
-.tienda .box-img figure{
-    width: 100%;
-    height: 100%;
-}
-
-.tienda .box-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tienda .box-img:nth-child(1){
-    grid-column-start: span 2;
-}
-
-.tienda .box-img:nth-child(4){
-    grid-row-start: span 2;
-}
-
-@media screen and (max-width:800px){
-        .tienda{
-            width: 95%;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            grid-template-rows: 200px;
-        }
-        .tienda .box-img:nth-child(1){
-            grid-column-start: span 1;
-        }
-}
-
-@media screen and (max-width:500px){
-    .tienda{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    .tienda .box-img img{
-        height: 200px;
-    }
-
-}
-
-/*fin REMERAS-----------------------------------------------------------------------------------------------------------------*/
-#reme1{
     width: 350px;
-    height: 250px;
-    /*font-size: 40px;
-    padding-right: 600px;
-    padding-left: 550px;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;*/
-
-}    
-
-
-#reme2{
-    font-size: 40px;
-    padding-right: 10px;
-    padding-left:50px ;
-    height: 250px;
-    width: 350px;
-    margin-right: 10px;
-}
-
-#reme3{
-    font-size: 40px;
-    padding-right: 60px;
-    padding-left: 10px;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
-
-}
-
-.letras{
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-
-}
-/*footer con redes----------------------------------------------------------------------------------------------------------------------*/
-
-.footer{
-position: fixed;
-  bottom: 0;   
-}
-
-.social{
-        padding-top: 100px;
-        padding-left: 5px;
-        padding-right: 30px;
-        height: auto;
-        width: 1400px;
-        text-align: center;
-        font-size: 50px;
-    
-}
-
-.tienda{
     text-align: center;
-    padding-top: 200px;
-    padding-left: 100px;
-    height: 200px;
-    
-}
-
-/*mapa----------------------------------------------------------------------------------------------------------------*/
-#maps{
-    text-align: center;
-    padding-left: 100px;
-    width: 70%;
-    margin: 0 auto;
-    height: 500px;
-}
-
-/*formulario-------------------------------------------------------------------------------------------------------*/
-.formu{
-    
-    text-align: center;
-}
-.formu,h2{
-     font-size: 20px;
-
-}
-
-label{
-    padding-right: 290px;
-}
-
-.formu, label{
-    padding-right: 10px;
-
-}
-
-.texto{
-
-    padding-top: 10px;
-    border: #000;
-}
-
-#lugar 
-{
-    text-align: center;
-
-}
-
-.boton{
-    background: rgb(26, 77, 100);
-}
-/*------------------------------*/
- #text{
-     background-color: rgb(8, 7, 7);
-     color: rgb(11, 164, 184);
-     padding: 20px;
-     margin: auto;
- }
-#titulo{
-    font-size: 50px;
-}
-
-#imagencasa{
-    width: 700px;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-    padding:auto;
-   text-align: center;
-    border:2px solid #ccc;
-    left: 50px;
-}
-
-::-webkit-scrollbar {
-    display: none;
-    }
-/*medidas de pantalla -------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:1200px){
-   
-
-    #reme1{
-        height: 210;
-        width: 200;
-        margin: 0;
-        
-        right: 100px;
-        left: 150px;
-    }
-    #reme2{
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    #reme3{
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-    }
-
-    
-    
-
-}
-
-@media (max-width:1069px){
-
-        .bienvenidos{
-            position: relative;
-            left:50px;
-            right: 50px;
-            font-size: 30px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .logo{
-            position: relative;
-            left: 40px;
-        }
-
-        .social{
-            padding-top: 100px;
-            padding-left: 50px;
-            padding-right: 70px;
-            height: 170px;
-            width: 900px;
-            text-align: center;
-            font-size: 50px;
-        }
-       
-        .menu > ul {
-            display: table;
-            overflow: hidden;
-            width: 70%;
-           
-            position: relative;
-            left: 1px;
-            right: 20px;
-        } 
-    
-
-}
-@media (max-width:793px){
-    .bienvenidos{
-        position:relative;
-        left: 50px;
-    }
-
-    .logo{
-        position: relative;
-        left: 50px;
-    }
-
-    .pa1, .pa2{
-        font-size: 20px;
-        left: 1px;
-
-    }
-
-    .contenedor figure {
-        position: relative;
-        width: 200px;
-        height: 220px;
-        
-        cursor: pointer;
-        top: 20px;
-        left: 1px;
-    }
-
-    #reme1{
-        height: 250px ;
-        width: 200px ;
-        left: 0.2px;
-        padding-left: 3px;
-    }
-    #reme2{
-        bottom: 10px;
-        height: auto;
-        width: 190px;
-    }
-
-
-
-    .social{
-        padding-top: 100px;
-        padding-left: 40px;
-        padding-right: 90px;
-        height: 150px;
-        width: 650px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-}
-
-@media (max-width:785px){
-    .bienvenidos{
-        position:relative;
-        left: 10px;
-        font-size: 30px;
-    }
-
-    .logo{
-        position: relative;
-        left: 110px;
-    }
-
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 75%;
-       
-        position: relative;
-        left: 60px;
-        right: 20px;
-    } 
-
-}
-
-@media (max-width:731px){
-    .bienvenidos{
-        position:relative;
-        left: 10px;
-        font-size: 25px;
-    }
-
-    .logo{
-        position: relative;
-        left: 110px;
-    }
-
-    .pa1, .pa2{
-        font-size: 20px;
-        left: 1px;
-
-    }
-
-    .contenedor figure {
-        position: relative;
-        width: 200px;
-        height: 220px;
-        
-        cursor: pointer;
-        top: 20px;
-        left: 1px;
-    }
-
-    #reme1{
-        height: 250px ;
-        width: 200px ;
-        left: 0.2px;
-        padding-left: 3px;
-    }
-    #reme2{
-        bottom: 10px;
-        height: auto;
-        width: 190px;
-    }
-
-
-
-    .social{
-        padding-top: 100px;
-        padding-left: 40px;
-        padding-right: 90px;
-        height: 150px;
-        width: 650px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 75%;
-       
-        position: relative;
-        left: 60px;
-        right: 20px;
-    } 
-
-    /*boostrap */
-
-
-}
-@media (max-width:703px) {
-
-
-    .bienvenidos{
-        position:relative;
-        left: 50px;
-    }
-    
-    .pa1, .pa2{
-        font-size: 20px;
-        left: 1px;
-
-    }
-
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 90%;
-       
-        position: relative;
-        left: 1px;
-        right: 20px;
-    } 
-
-    .contenedor figure {
-        position: relative;
-        width: 200px;
-        height: 250px;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0px 15px 25px
-        rgba(0, 0,0, 0.50);
-        cursor: pointer;
-        top: 20px;
-        left: 1px;
-    }
-    #reme1{
-        height: 250px ;
-        width: 200px ;
-        left: 0.2px;
-        padding-left: 3px;
-    }
-
-    #reme2{
-        top: 200px;
-        height: 220px;
-        width: 250px;
-        bottom: 150px
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 20px;
-        padding-right: 70px;
-        height: 150px;
-        width: 650px;
-        text-align: center;
-        font-size: 50px;
-    }
-}  
-@media (max-width:699px)
-{
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 65%;
-       
-        position: relative;
-        left: 1px;
-        right: 20px;
-    } 
-
-    .bienvenidos{
-        position: relative;
-        left:10px;
-        right: 30px;
-        font-size: 25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .logo{
-        position: relative;
-        left: 30px;
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 0.1px;
-        padding-right: 170px;
-        height: 150px;
-        width: 500px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .pa1, .pa2{
-        font-size: 20px;
-        left: 0.1px;
-        padding-left: 5px;
-        padding-right: 180px;
-    }
-
-}
-@media (max-width:649px)
-{
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 70%;
-       
-        position: relative;
-        left: 60px;
-        right: 20px;
-    } 
-
-    .bienvenidos{
-        position: relative;
-        left:10px;
-        right: 30px;
-        font-size: 25px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .logo{
-        position: relative;
-        left: 70px;
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 0.1px;
-        padding-right: 170px;
-        height: 150px;
-        width: 600px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-    .pa1, .pa2{
-        font-size: 20px;
-        left: 0.1px;
-        padding-left: 30px;
-        padding-right: 70px;
-    }
-
-}
-@media (max-width:539px) {
-    .bienvenidos{
-        font-size: 30px;
-    }
-
-    .pa1, .pa2{
-        font-size: 25px;
-        width: 500px;
-        height:100%;
-
-    }
-
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 90%;
-       
-        position: relative;
-        left: 0,1px;
-        right: 20px;
-    } 
-    
-    #reme2{
-        font-size: 30px;
-        padding-right: 30px;
-        padding-left:  10px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
-        top: 450px;
-        position: absolute;
-        
-    }
-
-    #reme1{
-        height: 250px ;
-        width: 200px ;
-        left: 0.2px;
-        padding-left: 3px;
-        
-    }
-
-    .contenedor figure {
-        position: relative;
-        width: 195px;
-        height: 250px;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0px 15px 25px
-        rgba(0, 0,0, 0.50);
-        cursor: pointer;
-        top: 200px;
-        left: 0.1px;
-        
-        
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 80px;
-        padding-right: 70px;
-        height: 80px;
-        width: 350px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-
-}
-
-
-@media (max-width: 433px){
-    .bienvenidos{
-        font-size: 20px;
-        width: auto;
-    }
-
-    .logo{
-        position: relative;
-        left: 10px;
-    }
-
-    header{
-        width: 600px;
-    }
-
-}
-@media (max-width: 437px){
-    .bienvenidos{
-        font-size: 20px;
-        width: auto;
-    }
-
-    .logo{
-        position: relative;
-        left: 10px;
-    }
-
-    header{
-        width: 600px;
-    }
-
-}
-@media (max-width: 401px){
-    .bienvenidos{
-        font-size: 10px;
-        width: auto;
-        left: 50px;
-    }
-
-    .logo{
-        position: relative;
-        left: 150px;
-       
-    }
-   
-
-    header{
-        width: 300px;
-    }
-
-    .menu > ul {
-        display: table;
-        overflow: hidden;
-        width: 50%;
-       
-        position: relative;
-        left: 110px;
-        right: 10px;
-    } 
-    
-    #reme2{
-        font-size: 30px;
-        padding-right: 30px;
-        padding-left:  10px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
-        top: 450px;
-        position: absolute;
-        
-    }
-
-    #reme1{
-        height: 250px ;
-        width: 200px ;
-        left: 0.2px;
-        padding-left: 3px;
-        
-    }
-
-    .contenedor figure {
-        position: relative;
-        width: 195px;
-        height: 250px;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0px 15px 25px
-        rgba(0, 0,0, 0.50);
-        cursor: pointer;
-        top: 200px;
-        left: 0.1px;
-        
-        
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 80px;
-        padding-right: 70px;
-        height: 80px;
-        width: 350px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-}
-@media (max-width: 437px){
-    .bienvenidos{
-        font-size: 18px;
-        width: auto;
-    }
-
-    .logo{
-        position: relative;
-        left: 40px;
-    }
-
-    header{
-        width: 600px;
-    }
-}
-
-@media (max-width:385px ){
-
-    
-    .bienvenidos{
-        position: relative;
-        left:20px;
-        right: 50px;
-        font-size: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       
-    }
-
-     .pa1, .pa2{
-        font-size: 15px;
-
-    }
-
-
-    #reme2{
-        font-size: 30px;
-        padding-right: 30px;
-        padding-left:  80px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
-        top: 300px;
-        position: absolute;
-        
-        left:0;
-    }
-
-    #reme1 {
-        height: 250px;
-        width: 190px;
-       padding-left: 3px;
-    }
-
-    .contenedor figure {
-        position: relative;
-        width: 195px;
-        height: 250px;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0px 15px 25px
-        rgba(0, 0,0, 0.50);
-        cursor: pointer;
-        
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 20px;
-        padding-right: 50px;
-        height: 80px;
-        width: 350px;
-        text-align: center;
-        font-size: 50px;
-    }
-    
-    
-}
+    font-size: 50px; } }
 
 /*---------------------------------------------------------------*/
-@media(max-width: 329px) {
-    #reme2{
-        font-size: 30px;
-        padding-right: 30px;
-        padding-left:  80px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
-        top: 355px;
-        position: absolute;
-        
-        left:0;
-    }
+@media (max-width: 329px) {
+  #reme2 {
+    font-size: 30px;
+    padding-right: 30px;
+    padding-left: 80px;
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    top: 355px;
+    position: absolute;
+    left: 0; }
+  #reme1 {
+    height: 250px;
+    width: 190px;
+    padding-left: 3px; }
+  .contenedor figure {
+    position: relative;
+    width: 190px;
+    height: 250px;
+    top: 100px;
+    left: 20px; }
+  header {
+    display: flex;
+    min-height: 50px;
+    width: 350px; }
+  .bienvenidos {
+    left: 10px; }
+  .pa1, .pa2 {
+    font-size: 15px;
+    width: 370px;
+    height: 100%; }
+  /*nosotros--------------*/
+  #text {
+    position: relative;
+    width: 700px;
+    height: 200px;
+    font-size: 35px; }
+  #par {
+    position: relative;
+    width: auto;
+    height: auto;
+    font-size: 35px; }
+  h1, h2 {
+    position: relative;
+    width: 720px; } }
 
-    #reme1 {
-        height: 250px;
-        width: 190px;
-       padding-left: 3px;
-    }
+@media (max-width: 327px) {
+  /*nosotros--------------*/
+  #text {
+    position: relative;
+    width: 680px;
+    height: 200px;
+    font-size: 35px; }
+  #par {
+    position: relative;
+    width: 690px;
+    height: 1100px;
+    font-size: 35px; }
+  h1, h2 {
+    position: relative;
+    width: 720px; } }
 
-    .contenedor figure {
-        position: relative;
-        width: 190px;
-        height: 250px;
-        top: 100px;
-        left: 20px;
-        
-    }
+@media (max-width: 289px) {
+  /*nosotros--------------*/
+  #text {
+    position: relative;
+    width: 700px;
+    height: 200px;
+    font-size: 30px; }
+  #par {
+    position: relative;
+    width: 700px;
+    height: 1200px;
+    font-size: 35px; }
+  h1, h2 {
+    position: relative;
+    width: 720px; } }
 
-    header{
-        display: flex;
-        min-height: 50px;
-        width:350px;
-    }
-    
-    .bienvenidos{
-        left: 10px;
-    }
+@media (max-width: 279px) {
+  .bienvenidos {
+    position: relative;
+    left: 20px;
+    right: 50px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  .pa1, .pa2 {
+    font-size: 15px;
+    width: 390px;
+    height: 100%; }
+  .social {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 50px;
+    height: 150px;
+    width: 350px;
+    text-align: center;
+    font-size: 50px; }
+  header {
+    display: flex;
+    min-height: 50px;
+    width: 420px; }
+  /*nosotros--------------*/
+  #text {
+    position: relative;
+    width: 700px;
+    height: 200px;
+    font-size: 35px; }
+  #par {
+    position: relative;
+    width: 750px;
+    height: 1100px;
+    font-size: 35px; }
+  h1, h2 {
+    position: relative;
+    width: 720px; } }
 
-    .pa1, .pa2{
-        font-size: 15px;
-        width: 370px;
-        height: 100%;
+.footer {
+  position: fixed;
+  bottom: 0; }
+  .footer .social {
+    padding-top: 100px;
+    padding-left: 5px;
+    padding-right: 30px;
+    height: auto;
+    width: 1400px;
+    text-align: center;
+    font-size: 50px; }
 
-    }
-    /*nosotros--------------*/
-    #text{
-        position: relative;
-        width: 700px;
-        height: 200px;
-        font-size: 35px;
-    }
-    #par{
-        position: relative;
-        width: auto;
-        height: auto;
-        font-size: 35px;
+/*mapas --------------------------*/
+#maps {
+  text-align: center;
+  padding-left: 100px;
+  width: 70%;
+  margin: 0 auto;
+  height: 500px; }
 
-    }
+/*formularios----------*/
+.formu {
+  text-align: center; }
+  .formu .h2 {
+    font-size: 20px; }
+  .formu label {
+    /*padding-right: 290px;*/
+    padding-right: 10px; }
+  .formu #text {
+    background-color: #080707;
+    color: #0ba4b8;
+    padding: 20px;
+    margin: auto; }
+    .formu #text .texto {
+      padding-top: 10px;
+      border: #000; }
 
-    h1, h2 {
-        position: relative;
-        width: 720px;
-    }
-    
-
-    
-}
-@media(max-width: 327px){
-    /*nosotros--------------*/
-    #text{
-        position: relative;
-        width: 680px;
-        height: 200px;
-        font-size: 35px;
-    }
-    #par{
-        position: relative;
-        width: 690px;
-        height: 1100px;
-        font-size: 35px;
-
-    }
-
-    h1, h2 {
-        position: relative;
-        width: 720px;
-    }
-    
-}
-@media(max-width: 289px){
-    /*nosotros--------------*/
-    #text{
-        position: relative;
-        width: 700px;
-        height: 200px;
-        font-size: 30px;
-    }
-    #par{
-        position: relative;
-        width: 700px;
-        height: 1200px;
-        font-size: 35px;
-
-    }
-
-    h1, h2 {
-        position: relative;
-        width: 720px;
-    }
-    
-}
-
-@media (max-width:279px ){
-
-    
-    .bienvenidos{
-        position: relative;
-        left:20px;
-        right: 50px;
-        font-size: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       
-    }
-
-     .pa1, .pa2{
-        font-size: 15px;
-        width: 390px;
-        height: 100%;
-
-    }
-
-
-    #reme2{
-        font-size: 30px;
-        padding-right: 30px;
-        padding-left:  80px;
-        height: 200px;
-        width: 200px;
-        margin-right: 10px;
-        top: 300px;
-        position: absolute;
-        
-        left:0;
-    }
-
-    #reme1 {
-        height: 250px;
-        width: 190px;
-       padding-left: 3px;
-    }
-
-    .contenedor figure {
-        position: relative;
-        width: 190px;
-        height: 250px;
-        overflow: hidden;
-        border-radius: 6px;
-        box-shadow: 0px 15px 25px
-        rgba(0, 0,0, 0.50);
-        cursor: pointer;
-         top: 50px;
-         left: 40px;
-        
-    }
-
-    .social{
-        padding-top: 100px;
-        padding-left: 20px;
-        padding-right: 50px;
-        height: 150px;
-        width: 350px;
-        text-align: center;
-        font-size: 50px;
-    }
-    
-    header{
-        display: flex;
-        min-height: 50px;
-        width:420px;
-    }
-
-    /*nosotros--------------*/
-    #text{
-        position: relative;
-        width: 700px;
-        height: 200px;
-        font-size: 35px;
-    }
-    #par{
-        position: relative;
-        width: 750px;
-        height: 1100px;
-        font-size: 35px;
-
-    }
-
-    h1, h2 {
-        position: relative;
-        width: 720px;
-    }
-    
-}
-
-/*@media screen and (max-width: 800px){
-    .tienda {
-        width: 95%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap:10px;
-        grid-template-rows: 200px;
-    }
-
-    .tienda .box-img:m1{
-        grid-column-start: span 1;
-    }
-}
-
-@media screen and (max-width: 500px){
-    .tienda {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-
-    .tienda .box-img img{
-        height: 200px;
-    }
-}*/
+/*nosotros---------------------*/
+/*medidas */
+@media (max-width: 437px) {
+  .bienvenidos {
+    font-size: 18px;
+    width: auto; }
+  .logo {
+    position: relative;
+    left: 40px; }
+  header {
+    width: 600px; } }
